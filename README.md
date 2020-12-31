@@ -27,5 +27,8 @@ A CLI app for automatically generating a starter template for your FastAPI proje
 ```bash
 $ python -m sonic generate <app-name>
 ```
+## Contributing Guide 
+
+All contributions are welcome to add more features and fix bugs, Contribution guide coming soon.
 
 ### Thanks for using Sonic generator folk !
