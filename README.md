@@ -6,7 +6,6 @@ A CLI app for automatically generating a starter template for your FastAPI proje
 | :--- | :--- |
 | Release Status |  [![status](https://img.shields.io/badge/status-stable-brightgreen.svg)](./) |
 | License |  [![license](https://img.shields.io/badge/license-MIT-orange.svg)](./) |
-| Build Status |  [![build status](https://travis-ci.org/risenW/datasist.svg?branch=master)](./) |
 
 # Installation
 
