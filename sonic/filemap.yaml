@@ -1,0 +1,29 @@
+# The filemap for the directory structure 
+
+filemap:
+  dirs:
+    - static
+    - templates 
+    - utils 
+    - routes 
+    - static/assets/fonts 
+    - static/assets/images
+
+  dir_files:
+    - static/style.css 
+    - static/script.js 
+    - templates/index.html 
+    - utils/__init__.py 
+    - utils/helpers.py
+    - routes/__init__.py 
+    - routes/test.py 
+
+  local_files:
+    - main.py 
+    - requirements.txt
+    - models.py 
+    - schemas.py
+    - .env
+    - README.md 
+    - .gitignore 
+

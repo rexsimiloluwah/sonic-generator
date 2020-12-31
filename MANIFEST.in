@@ -1,0 +1,7 @@
+include sonic/skeleton/*
+include sonic/skeleton/routes/* 
+include sonic/skeleton/static/* 
+include sonic/skeleton/static/images/*
+include sonic/skeleton/templates/* 
+include sonic/skeleton/utils/*
+include sonic/filemap.yaml

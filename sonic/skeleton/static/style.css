@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background: #a3e3b4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.app__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.app__icon{
+    font-size: 100px;
+    color: #3b4f41;
+    animation: rotation 2s infinite linear;
+}
+
+.app__container h1{
+    color: #3b4f41;
+    font-size: 45px;
+    line-height: 75px;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
