@@ -2,7 +2,7 @@
 
 A CLI app for automatically generating a starter template for your FastAPI projects in a jiffy.
 
-| Latest Release |  [![latest release](https://img.shields.io/badge/pip-v1.5.2-blue.svg)](https://pypi.org/project/datasist/) |
+| Latest Release |  [![latest release](https://img.shields.io/badge/pip-v1.5.2-blue.svg)](https://pypi.org/project/sonic-generator/) |
 | :--- | :--- |
 | Release Status |  [![status](https://img.shields.io/badge/status-stable-brightgreen.svg)](./) |
 | License |  [![license](https://img.shields.io/badge/license-MIT-orange.svg)](./) |
