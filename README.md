@@ -26,6 +26,20 @@ A CLI app for automatically generating a starter template for your FastAPI proje
 ```bash
 $ python -m sonic generate <app-name>
 ```
+<img src = "sonicgeneratedapp.PNG" alt = "Generated app" />
+
+## Testing
+
+```bash
+$ cd <app-name>
+```
+
+```bash
+$ python main.py
+```
+
+<img src = "sonicbrowser.png" alt = "Sonic in Browser" />
+
 ## Contributing Guide 
 
 All contributions are welcome to add more features and fix bugs, Contribution guide coming soon.
