@@ -38,7 +38,11 @@ $ cd <app-name>
 $ python main.py
 ```
 
+Go to http://localhost:8000 in your browser
+
 <img src = "sonicbrowser.png" alt = "Sonic in Browser" />
+
+Edit the files and quickly build your FastAPI project.
 
 ## Contributing Guide 
 
