@@ -26,7 +26,7 @@ A CLI app for automatically generating a starter template for your FastAPI proje
 ```bash
 $ python -m sonic generate <app-name>
 ```
-<img src = "sonicgeneratedapp.PNG" alt = "Generated app" />
+<img src = "https://raw.githubusercontent.com/rexsimiloluwah/sonic-generator/master/sonicgeneratedapp.PNG" alt = "Generated app" />
 
 ## Testing
 
@@ -38,9 +38,11 @@ $ cd <app-name>
 $ python main.py
 ```
 
-Go to http://localhost:8000 in your browser
+> Go to http://localhost:8000 in your browser to view the generated ap
 
-<img src = "sonicbrowser.png" alt = "Sonic in Browser" />
+> To view the interactive swagger docs, Go to http://localhost:8000/docs
+
+<img src = "https://raw.githubusercontent.com/rexsimiloluwah/sonic-generator/master/sonicbrowser.png" alt = "Sonic in Browser" />
 
 Edit the files and quickly build your FastAPI project.
 
@@ -48,4 +50,4 @@ Edit the files and quickly build your FastAPI project.
 
 All contributions are welcome to add more features and fix bugs, Contribution guide coming soon.
 
-### Thanks for using Sonic generator folk !
+### Thanks for using Sonic generator.

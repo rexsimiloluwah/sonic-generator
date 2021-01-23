@@ -3,6 +3,7 @@ import sys
 import argparse 
 import yaml
 import click
+import time
 from colorama import Fore, Style
 
 BASE_DIR = os.path.dirname(__file__)
@@ -100,14 +101,16 @@ def main():
 def generate(**kwargs):
     name = kwargs.get("name")
     g = Generator(name)
+    start = time.time()
     g.init_app()
     g.create_dirs()
     g.create_files()
-    click.echo(f"{Fore.GREEN}App generated, Voila !{Style.RESET_ALL}")
+    end = time.time()
+    click.echo(f"{Fore.GREEN}App generated in {(end - start)} seconds, Voila !{Style.RESET_ALL}")
     click.echo("To Run the app :- ")
     click.echo("")
     click.echo(f"{Fore.GREEN}${Style.RESET_ALL} cd <app-name>")
-    click.echo(f"{Fore.GREEN}${Style.RESET_ALL} python3 main.py")
+    click.echo(f"{Fore.GREEN}${Style.RESET_ALL} python main.py")
     click.echo("")
     click.echo(f"{Fore.GREEN}---------------------------------------------------{Style.RESET_ALL}")
     click.echo(f"{Fore.GREEN}Thanks for using Sonic Generator, Build something amazing.{Style.RESET_ALL}")

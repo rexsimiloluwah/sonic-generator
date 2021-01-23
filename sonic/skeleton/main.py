@@ -26,15 +26,33 @@ app.mount(
     name = "static"
 )
 
-# Templates
+# Templates using Jinja2 Templating engine
+## DOCUMENTATION REFERENCE :- https://fastapi.tiangolo.com/advanced/templates/
 templates = Jinja2Templates(directory = "templates")
 
-
+# Adding the route to render index.html template
 @app.get("/", response_class = HTMLResponse)
 async def index(request : Request):
     return templates.TemplateResponse("index.html", {"request" : request})
 
+# Adding CORS middleware to the app to handle Cross-Origin resource sharing 
+## DOCUMENTATION REFERENCE :- https://fastapi.tiangolo.com/tutorial/cors/
+# Add all origins to this list or set origins = ["*"] to allow all
+origins = [
+    "http://localhost:8000",
+]
 
+# Adding the middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Exception handler
+## DOCUMENTATION REFERENCE :- https://fastapi.tiangolo.com/tutorial/handling-errors/
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request: Request, exc: RequestValidationError):
     return JSONResponse(
@@ -46,5 +64,6 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
         }),
     )
 
+# Run the app via uvicorn server on PORT 8000
 if __name__ == "__main__":
     uvicorn.run(app, host = "0.0.0.0", port = 8000)

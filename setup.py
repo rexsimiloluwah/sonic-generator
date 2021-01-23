@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="sonic-generator",
-    version="1.1.0",
+    version="1.1.5",
     description="Automatically generate starter template for your FastPI projects in a jiffy.",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -25,7 +25,7 @@ setup(
     ],
     packages=["sonic"],
     include_package_data=True,
-    install_requires=["fastapi", "aiofiles", "pydantic", "uvicorn", "PyYAML"],
+    install_requires=["fastapi", "aiofiles", "pydantic", "uvicorn", "PyYAML", "jinja2", "colorama"],
     entry_points={
         "console_scripts": [
             "sonicgenerator=sonic.__main__:main",

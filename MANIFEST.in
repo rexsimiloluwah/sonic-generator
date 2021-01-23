@@ -5,3 +5,5 @@ include sonic/skeleton/static/images/*
 include sonic/skeleton/templates/* 
 include sonic/skeleton/utils/*
 include sonic/filemap.yaml
+include sonicbrowser.png 
+include sonicgeneratedapp.PNG
